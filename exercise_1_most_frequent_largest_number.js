@@ -18,7 +18,11 @@ function getTotal(arrNumber) {
             count++
         }
     }
-    return count || ''
+    if (count) {
+        return 'angka paling besar adalah ' + arrNumber[arrNumber.length-1] + ' dan jumlah kemunculan sebanyak ' + count + ' kali'
+    } else {
+        return ''
+    }
 }
 
 function mostFrequentLargestNumbers(arrNumber) {
